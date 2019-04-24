@@ -1,0 +1,118 @@
+.window{
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	display: none;
+}
+
+.window .closeWin{
+	height: 50px;
+	width: 100%;
+}
+
+.window .closeWin .X{
+	height: 50px;
+	width: 50px;
+	background-color: #ff2929;
+	float: right;
+	position: relative;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	cursor: pointer;
+}
+
+.window .closeWin .X .diagnonallyLeft{
+	width: 3px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+    margin-left: 25px;
+}
+
+.window .closeWin .X .diagnonallyRight{
+	width: 3px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    margin-left: 25px;
+}
+
+.window .UploadCSvFile, .window .AddClassroom, .window .AddStudent, .window .chooseView{
+	background-color: rgba(255, 255, 255, 1);
+	border: 3px solid #000000;
+	max-width: 400px;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto;
+}
+
+.window h3{
+	font-size: 1.5em;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.window .chooseView .btns ul{
+	display: table;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.window .chooseView .btns ul li{
+	display: table-cell;
+	padding: 0px;
+	width: 130px;
+}
+
+.window .chooseView .btns ul .firstli{
+	padding-right: 20px;
+}
+
+.window .chooseView .btns ul li form{
+	padding: 0px;
+}
+
+.window .chooseView .btns ul li form button{
+	padding: 10px;
+	width: 130px;
+	background-color: white;
+	border: 2px solid black;
+	display: block;
+}
+
+.window form{
+	padding: 0px 40px 40px 40px;
+}
+
+.window .UploadCSvFile input{
+	cursor: pointer;
+}
+
+.window .AddClassroom input[type="text"], .window .AddStudent input[type="text"]{
+	border: 1px solid black;
+	margin: 5px 0px;
+	padding: 2px;
+}
+
+.window .AddClassroom input[type="submit"], .window .AddStudent input[type="submit"]{
+	border: 2px solid black;
+	background-color: white;
+	margin: 5px 0px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+input:focus {
+    outline: lime;
+}
+

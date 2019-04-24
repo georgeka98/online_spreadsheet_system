@@ -1,0 +1,116 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Century Gothic", sans-serif;
+	font-size: 1em;
+}
+
+body{
+	background-color: rgb(102, 160, 255);
+}
+
+.content{
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+
+.content .top h1{
+	font-size: 4em;
+}
+
+.content .mid{
+	margin: 30px 0px;
+}
+
+.content .mid ul{
+	display: block;
+	list-style: none;
+}
+
+.content .mid ul li{
+	margin: 30px auto;
+	width: 200px;
+}
+
+.content .mid ul li a{
+	padding: 20px;
+	background-color: white;
+	display: block;
+	text-decoration: none;
+	color: black;
+	border-radius: 4px;
+}
+
+.content .profiles button{
+	height: 100px;
+	width: 100px;
+	border: none;
+	background-color: white;
+	border-radius: 4px;
+	margin: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.content .profiles button p{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+
+.content .bot ul{
+	display: block;
+	list-style: none;
+}
+
+.content .bot ul li{
+	margin: 30px;
+	width: 200px;
+	display: inline-block;
+}
+
+.content .bot ul li a{
+	padding: 20px;
+	background-color: white;
+	display: block;
+	text-decoration: none;
+	color: black;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.content .mid table{
+	margin: auto;
+	border: 1px solid black;
+}
+
+.content .mid table *{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.content .mid .table{
+	background-color: black;
+}
+
+@media screen and (min-width: 500px){
+	.content{
+		width: 500px;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.content{
+		width: 1000px;
+	}
+}
+
+@media screen and (min-width: 1500px){
+	.content{
+		width: auto;
+	}
+}
